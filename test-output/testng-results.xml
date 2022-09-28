@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-27T10:06:47Z" name="Default suite" finished-at="2022-09-27T10:07:07Z" duration-ms="19513">
+    <groups>
+    </groups>
+    <test started-at="2022-09-27T10:06:47Z" name="Default test" finished-at="2022-09-27T10:07:07Z" duration-ms="19513">
+      <class name="testngexamples.HRMCssSelector">
+        <test-method signature="HRMLogin()[pri:0, instance:testngexamples.HRMCssSelector@4e423aa2]" started-at="2022-09-27T10:06:47Z" name="HRMLogin" finished-at="2022-09-27T10:07:07Z" duration-ms="19490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HRMLogin -->
+      </class> <!-- testngexamples.HRMCssSelector -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
