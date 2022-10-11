@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngexamples.HRMCssSelector">
+      <class name="testngexamples.HRM">
         <methods>
-          <include name="HRMLogin"/>
+          <include name="HRMLogout"/>
         </methods>
-      </class> <!-- testngexamples.HRMCssSelector -->
+      </class> <!-- testngexamples.HRM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

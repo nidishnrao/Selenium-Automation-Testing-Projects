@@ -1,17 +1,294 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="8" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-27T10:06:47Z" name="Default suite" finished-at="2022-09-27T10:07:07Z" duration-ms="19513">
+  <suite started-at="2022-09-28T09:05:15Z" name="Suite" finished-at="2022-09-28T09:07:08Z" duration-ms="113005">
     <groups>
     </groups>
-    <test started-at="2022-09-27T10:06:47Z" name="Default test" finished-at="2022-09-27T10:07:07Z" duration-ms="19513">
-      <class name="testngexamples.HRMCssSelector">
-        <test-method signature="HRMLogin()[pri:0, instance:testngexamples.HRMCssSelector@4e423aa2]" started-at="2022-09-27T10:06:47Z" name="HRMLogin" finished-at="2022-09-27T10:07:07Z" duration-ms="19490" status="PASS">
+    <test started-at="2022-09-28T09:05:15Z" name="Test" finished-at="2022-09-28T09:07:08Z" duration-ms="113005">
+      <class name="testngexamples.HRM">
+        <test-method signature="HRMLogin()[pri:0, instance:testngexamples.HRM@63070bab]" started-at="2022-09-28T09:05:15Z" name="HRMLogin" finished-at="2022-09-28T09:05:40Z" duration-ms="25462" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HRMLogin -->
-      </class> <!-- testngexamples.HRMCssSelector -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method signature="HRMLogout()[pri:1, instance:testngexamples.HRM@63070bab]" started-at="2022-09-28T09:06:32Z" name="HRMLogout" finished-at="2022-09-28T09:07:04Z" duration-ms="31404" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NIDISH', ip: '192.168.217.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a95558229aa86324b16dce175471ec7
+*** Element info: {Using=name, value=username}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NIDISH', ip: '192.168.217.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a95558229aa86324b16dce175471ec7
+*** Element info: {Using=name, value=username}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at testngexamples.HRM.HRMLogout(HRM.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HRMLogout -->
+      </class> <!-- testngexamples.HRM -->
+      <class name="testngexamples.DataProviderExample">
+        <test-method signature="testSearchCountry(java.lang.String)[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:05:40Z" name="testSearchCountry" data-provider="myTest" finished-at="2022-09-28T09:05:46Z" duration-ms="5827" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchCountry -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:05:40Z" name="setUp" finished-at="2022-09-28T09:05:40Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:05:46Z" name="tearDown" finished-at="2022-09-28T09:05:46Z" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testSearchCountry(java.lang.String)[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:05:46Z" name="testSearchCountry" data-provider="myTest" finished-at="2022-09-28T09:05:52Z" duration-ms="6296" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Brazil]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchCountry -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:05:46Z" name="setUp" finished-at="2022-09-28T09:05:46Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:05:52Z" name="tearDown" finished-at="2022-09-28T09:05:53Z" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:05:53Z" name="setUp" finished-at="2022-09-28T09:05:53Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchCountry(java.lang.String)[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:05:53Z" name="testSearchCountry" data-provider="myTest" finished-at="2022-09-28T09:05:58Z" duration-ms="5506" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Canada]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchCountry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:05:58Z" name="tearDown" finished-at="2022-09-28T09:05:58Z" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:05:58Z" name="setUp" finished-at="2022-09-28T09:05:58Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchCountry(java.lang.String)[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:05:58Z" name="testSearchCountry" data-provider="myTest" finished-at="2022-09-28T09:06:05Z" duration-ms="7125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sri Lanka]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchCountry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:06:05Z" name="tearDown" finished-at="2022-09-28T09:06:05Z" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:06:05Z" name="setUp" finished-at="2022-09-28T09:06:05Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchCountry(java.lang.String)[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:06:05Z" name="testSearchCountry" data-provider="myTest" finished-at="2022-09-28T09:06:19Z" duration-ms="13668" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[England]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchCountry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:06:19Z" name="tearDown" finished-at="2022-09-28T09:06:19Z" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:06:19Z" name="setUp" finished-at="2022-09-28T09:06:19Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchCountry(java.lang.String)[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:06:19Z" name="testSearchCountry" data-provider="myTest" finished-at="2022-09-28T09:06:25Z" duration-ms="6191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[United Kingdom]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchCountry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:06:25Z" name="tearDown" finished-at="2022-09-28T09:06:26Z" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:06:26Z" name="setUp" finished-at="2022-09-28T09:06:26Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchCountry(java.lang.String)[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:06:26Z" name="testSearchCountry" data-provider="myTest" finished-at="2022-09-28T09:06:32Z" duration-ms="6322" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchCountry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngexamples.DataProviderExample@291b4bf5]" started-at="2022-09-28T09:06:32Z" name="tearDown" finished-at="2022-09-28T09:06:32Z" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testngexamples.DataProviderExample -->
+      <class name="testngexamples.FacebookSignup">
+        <test-method signature="signup()[pri:1, instance:testngexamples.FacebookSignup@68e5eea7]" started-at="2022-09-28T09:07:04Z" name="signup" finished-at="2022-09-28T09:07:08Z" duration-ms="4061" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='firstname']"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NIDISH', ip: '192.168.217.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b59923bbbb497e7e05945e68e6ab241d
+*** Element info: {Using=name, value=firstname}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='firstname']"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NIDISH', ip: '192.168.217.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b59923bbbb497e7e05945e68e6ab241d
+*** Element info: {Using=name, value=firstname}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at testngexamples.FacebookSignup.signup(FacebookSignup.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup -->
+      </class> <!-- testngexamples.FacebookSignup -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

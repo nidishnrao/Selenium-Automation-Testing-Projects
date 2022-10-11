@@ -8,11 +8,60 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">19,513</td><td></td><td></td></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">8</td><td class="num">0</td><td class="num attn">2</td><td class="num">113,005</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testngexamples.HRMCssSelector</td><td><a href="#m0">HRMLogin</a></td><td rowspan="1">1664273207831</td><td rowspan="1">19490</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testngexamples.FacebookSignup</td><td><a href="#m0">signup</a></td><td rowspan="1">1664356024007</td><td rowspan="1">4061</td></tr><tr class="failedodd"><td rowspan="1">testngexamples.HRM</td><td><a href="#m1">HRMLogout</a></td><td rowspan="1">1664355992601</td><td rowspan="1">31404</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">testngexamples.DataProviderExample</td><td><a href="#m2">testSearchCountry</a></td><td rowspan="7">1664355986144</td><td rowspan="7">6322</td></tr><tr class="passedeven"><td><a href="#m3">testSearchCountry</a></td></tr><tr class="passedeven"><td><a href="#m4">testSearchCountry</a></td></tr><tr class="passedeven"><td><a href="#m5">testSearchCountry</a></td></tr><tr class="passedeven"><td><a href="#m6">testSearchCountry</a></td></tr><tr class="passedeven"><td><a href="#m7">testSearchCountry</a></td></tr><tr class="passedeven"><td><a href="#m8">testSearchCountry</a></td></tr><tr class="passedodd"><td rowspan="1">testngexamples.HRM</td><td><a href="#m9">HRMLogin</a></td><td rowspan="1">1664355915083</td><td rowspan="1">25462</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testngexamples.HRMCssSelector#HRMLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">testngexamples.FacebookSignup#signup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;firstname&apos;]&quot;}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NIDISH&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b59923bbbb497e7e05945e68e6ab241d
+*** Element info: {Using=name, value=firstname}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at testngexamples.FacebookSignup.signup(FacebookSignup.java:24)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testngexamples.HRM#HRMLogout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NIDISH&apos;, ip: &apos;192.168.217.1&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a95558229aa86324b16dce175471ec7
+*** Element info: {Using=name, value=username}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at testngexamples.HRM.HRMLogout(HRM.java:43)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testngexamples.DataProviderExample#testSearchCountry</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>United States</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testngexamples.DataProviderExample#testSearchCountry</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Canada</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testngexamples.DataProviderExample#testSearchCountry</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>United Kingdom</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testngexamples.DataProviderExample#testSearchCountry</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Brazil</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testngexamples.DataProviderExample#testSearchCountry</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Sri Lanka</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testngexamples.DataProviderExample#testSearchCountry</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>India</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testngexamples.DataProviderExample#testSearchCountry</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>England</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testngexamples.HRM#HRMLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
